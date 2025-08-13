@@ -1,9 +1,23 @@
-import React from 'react'
+import React ,{ useState }from 'react';
+import {Link, useNavigate} from 'react-router-dom';
 
-function Register() {
-  return (
-    <div>Register</div>
-  )
+function Register(){
+  const navigate =useNavigate();
+
+
+  const[formData, setFormData]= useState({
+    FirstName: '',
+    LastName: '',
+    Address: '',
+    MobileNumber: '',
+    NIC: '',
+    Email:'',
+    Password: '',
+    Password: '',
+
+  });
+
+  const[message, setMessage] = useState('');
+  //const[errors]
 }
 
-export default Register
